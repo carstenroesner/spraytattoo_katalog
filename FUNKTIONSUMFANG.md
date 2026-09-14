@@ -14,6 +14,11 @@ Sprayer gehen.
   Schablonen-Nummer.
 - Ein Tippen auf eine Vorlage öffnet die Detailansicht mit größerem Vorschaubild,
   ausführlicher Beschreibung, Preis und Schablonen-Nummer.
+- Das Raster ist responsiv: Ab einer bestimmten Fensterbreite werden mehr
+  Spalten (3, 4, ggf. 5) angezeigt statt die Kacheln nur zu vergrößern — so
+  bleibt die Ansicht auf Tablet/Desktop bzw. im Querformat übersichtlich.
+- Über das Lupen-Symbol oben rechts lässt sich eine Volltextsuche öffnen, die
+  Name, Beschreibung, Schablonen-Nummer und Kategorie der Vorlagen durchsucht.
 
 ## 2. Wunschliste
 
@@ -47,6 +52,24 @@ Sprayer gehen.
 - Dort wird genau diese Funktionsbeschreibung direkt in der App angezeigt, damit
   Nutzer:innen und das Entwicklungsteam jederzeit nachvollziehen können, was die
   App aktuell leistet.
+
+## 6. Startbildschirm
+
+- Beim Öffnen der App wird für ca. 1 Sekunde ein Startbildschirm mit Logo und
+  App-Namen angezeigt, bevor der Katalog erscheint.
+
+## 7. Über diese App & Problem melden
+
+- Über das Menü (⋮) ist der Punkt "Über diese App" erreichbar: Ein
+  Overlay-Fenster zeigt einen Copyright-Hinweis auf den Namen des
+  Entwicklers/Betreibers.
+- Über den Menüpunkt "Problem melden" lässt sich ein Problem oder eine
+  Anregung erfassen (Titel, Beschreibung, Kategorie Problem/Anregung). Der
+  Dialog öffnet anschließend ein vorausgefülltes neues Issue im
+  GitHub-Repository der App im Browser; die endgültige Übermittlung erfolgt
+  dort mit dem eigenen GitHub-Konto der meldenden Person — die App selbst
+  enthält bewusst kein Zugriffstoken, um GitHub-Zugangsdaten nicht in der App
+  hinterlegen zu müssen.
 
 ## Aktueller Stand / bekannte Einschränkungen
 

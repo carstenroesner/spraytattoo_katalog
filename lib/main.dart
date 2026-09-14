@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'screens/home_shell.dart';
+import 'screens/splash_screen.dart';
 import 'services/wishlist_service.dart';
 import 'theme/app_theme.dart';
 
@@ -20,7 +20,7 @@ class SprayTattooApp extends StatelessWidget {
         title: 'SprayTattoo Katalog',
         debugShowCheckedModeBanner: false,
         theme: AppTheme.light(),
-        home: const HomeShell(),
+        home: const SplashGate(),
       ),
     );
   }

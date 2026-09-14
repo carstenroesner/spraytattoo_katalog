@@ -23,6 +23,10 @@ const List<FeatureSection> featureOverviewSections = [
           'Ski, Bike, Bob, Getränke.',
       'Auf einen Blick sichtbar: Name, Kategorie, Preis und Schablonen-Nummer.',
       'Detailansicht mit größerem Bild, Beschreibung, Preis und Nummer.',
+      'Responsives Raster: Ab bestimmten Fensterbreiten mehr Spalten (3, 4, 5) '
+          'statt größerer Kacheln.',
+      'Volltextsuche über das Lupen-Symbol oben rechts (Name, Beschreibung, '
+          'Nummer, Kategorie).',
     ],
   ),
   FeatureSection(
@@ -55,6 +59,24 @@ const List<FeatureSection> featureOverviewSections = [
     points: [
       'Über das Menü (⋮) auf dem Katalog-Bildschirm erreichbar.',
       'Zeigt denselben Funktionsumfang wie FUNKTIONSUMFANG.md im Repository.',
+    ],
+  ),
+  FeatureSection(
+    title: '6. Startbildschirm',
+    points: [
+      'Beim Öffnen der App wird ca. 1 Sekunde lang ein Startbildschirm mit '
+          'Logo und App-Namen angezeigt.',
+    ],
+  ),
+  FeatureSection(
+    title: '7. Über diese App & Problem melden',
+    points: [
+      '"Über diese App" (Menü ⋮) zeigt ein Overlay mit Copyright-Hinweis.',
+      '"Problem melden" (Menü ⋮) öffnet einen Dialog für Titel, Beschreibung '
+          'und Kategorie (Problem/Anregung).',
+      'Beim Absenden öffnet sich ein vorausgefülltes neues GitHub-Issue im '
+          'Browser; final abgeschickt wird es mit dem eigenen GitHub-Konto der '
+          'meldenden Person — die App speichert dafür bewusst kein Zugriffstoken.',
     ],
   ),
 ];
