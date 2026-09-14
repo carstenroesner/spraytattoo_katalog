@@ -11,6 +11,11 @@ void main() {
 
     expect(find.byType(SplashScreen), findsOneWidget);
     expect(find.text('Spray Tattoo'), findsOneWidget);
+
+    // Den Splash-Timer noch ablaufen lassen, bevor der Test endet — sonst
+    // meldet flutter_test einen noch ausstehenden Timer ("!timersPending").
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pumpAndSettle();
   });
 
   testWidgets('App wechselt nach dem Startbildschirm zum Katalog-Screen',
