@@ -10,6 +10,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tribal,
     price: 14.90,
     description: 'Geschwungenes Tribal-Motiv in Drachenform, ideal für Oberarm oder Rücken.',
+    icon: Icons.local_fire_department,
   ),
   const TattooTemplate(
     id: 't002',
@@ -18,6 +19,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tier,
     price: 18.50,
     description: 'Detailreicher Wolfskopf vor Vollmond-Silhouette.',
+    icon: Icons.nightlight_round,
   ),
   const TattooTemplate(
     id: 't003',
@@ -26,6 +28,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.blumen,
     price: 12.00,
     description: 'Zarter Zweig mit Kirschblüten, gut für Handgelenk oder Schulter.',
+    icon: Icons.spa,
   ),
   const TattooTemplate(
     id: 't004',
@@ -34,6 +37,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.schriftzug,
     price: 9.90,
     description: 'Verschnörkelter Schriftzug in Script-Optik.',
+    icon: Icons.format_quote,
   ),
   const TattooTemplate(
     id: 't005',
@@ -42,6 +46,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.symbol,
     price: 15.00,
     description: 'Klassischer Kompass mit feinen Linienverzierungen.',
+    icon: Icons.explore,
   ),
   const TattooTemplate(
     id: 't006',
@@ -50,6 +55,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.fantasie,
     price: 22.00,
     description: 'Großflächiges Phönix-Motiv, wirkt am besten auf Rücken oder Brust.',
+    icon: Icons.local_fire_department,
   ),
   const TattooTemplate(
     id: 't007',
@@ -58,6 +64,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tribal,
     price: 13.50,
     description: 'Durchgehendes Maori-Bandmuster für Oberarm oder Wade.',
+    icon: Icons.linear_scale,
   ),
   const TattooTemplate(
     id: 't008',
@@ -66,6 +73,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tier,
     price: 11.00,
     description: 'Zwei fliegende Schwalben, klassisches Motiv für das Schlüsselbein.',
+    icon: Icons.air,
   ),
   const TattooTemplate(
     id: 't009',
@@ -74,6 +82,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.blumen,
     price: 16.90,
     description: 'Rosenranke mit Dornen, gut kombinierbar mit Schriftzügen.',
+    icon: Icons.local_florist,
   ),
   const TattooTemplate(
     id: 't010',
@@ -82,6 +91,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.schriftzug,
     price: 9.90,
     description: 'Moderner Schriftzug in serifenloser Handschrift.',
+    icon: Icons.self_improvement,
   ),
   const TattooTemplate(
     id: 't011',
@@ -90,6 +100,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.symbol,
     price: 13.00,
     description: 'Reihe von Mondphasen, gut für Unterarm oder Rippen.',
+    icon: Icons.brightness_2,
   ),
   const TattooTemplate(
     id: 't012',
@@ -98,6 +109,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.fantasie,
     price: 24.50,
     description: 'Großes, detailreiches Motiv im asiatischen Stil.',
+    icon: Icons.bolt,
   ),
   const TattooTemplate(
     id: 't013',
@@ -106,6 +118,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tier,
     price: 19.90,
     description: 'Kraftvoller Löwenkopf mit ausladender Mähne.',
+    icon: Icons.wb_sunny,
   ),
   const TattooTemplate(
     id: 't014',
@@ -114,6 +127,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.blumen,
     price: 12.50,
     description: 'Realistische Sonnenblume mit feinen Blattadern.',
+    icon: Icons.brightness_high,
   ),
   const TattooTemplate(
     id: 't015',
@@ -122,6 +136,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.symbol,
     price: 17.00,
     description: 'Symmetrisches Mandala-Muster, gut für Schulterblatt.',
+    icon: Icons.hexagon_outlined,
   ),
   const TattooTemplate(
     id: 't016',
@@ -130,6 +145,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.fantasie,
     price: 20.00,
     description: 'Filigrane Fee-Illustration mit Federflügeln.',
+    icon: Icons.auto_awesome,
   ),
 
   // --- Winterberg-Erweiterung (SPT-017 .. SPT-046) ---
@@ -143,6 +159,7 @@ final List<TattooTemplate> mockCatalog = [
         'Eigens gestaltetes, schlichtes W-Monogramm mit gekreuzten Ski im Hintergrund – '
         'kein Abbild eines echten Stadt- oder Vereinslogos, sondern ein eigenständiges '
         'Wintersport-Design.',
+    icon: Icons.downhill_skiing,
   ),
   const TattooTemplate(
     id: 't018',
@@ -151,6 +168,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.ski,
     price: 15.90,
     description: 'Zwei gekreuzte Skier mit Stöcken, klassisches Motiv für Wintersportfans.',
+    icon: Icons.downhill_skiing,
   ),
   const TattooTemplate(
     id: 't019',
@@ -159,6 +177,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.ski,
     price: 17.50,
     description: 'Abfahrtsläufer in dynamischer Haltung, minimalistisch gehalten.',
+    icon: Icons.terrain,
   ),
   const TattooTemplate(
     id: 't020',
@@ -167,6 +186,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.ski,
     price: 9.90,
     description: 'Stilisierte Schneeflocke, gut kombinierbar mit anderen Wintersport-Motiven.',
+    icon: Icons.ac_unit,
   ),
   const TattooTemplate(
     id: 't021',
@@ -175,6 +195,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.bike,
     price: 16.90,
     description: 'Mountainbike in Seitenansicht mit angedeuteter Reifenspur.',
+    icon: Icons.pedal_bike,
   ),
   const TattooTemplate(
     id: 't022',
@@ -183,6 +204,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.bike,
     price: 12.50,
     description: 'Fahrrad-Kettenrad als grafisches Rund-Symbol.',
+    icon: Icons.settings,
   ),
   const TattooTemplate(
     id: 't023',
@@ -191,6 +213,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.bike,
     price: 14.90,
     description: 'Bike-Lenker mit angedeuteten Trail-Linien im Hintergrund.',
+    icon: Icons.route,
   ),
   const TattooTemplate(
     id: 't024',
@@ -199,6 +222,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.bob,
     price: 19.90,
     description: 'Zweier-Bob in voller Fahrt – Motiv für Bobbahn-Fans.',
+    icon: Icons.speed,
   ),
   const TattooTemplate(
     id: 't025',
@@ -207,6 +231,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.bob,
     price: 10.90,
     description: 'Grafische Startnummer mit Eiskristall-Rahmen.',
+    icon: Icons.filter_1,
   ),
   const TattooTemplate(
     id: 't026',
@@ -215,6 +240,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.getraenke,
     price: 13.90,
     description: 'Klassischer Bierkrug mit Schaumkrone, für alle Après-Ski-Fans.',
+    icon: Icons.sports_bar,
   ),
   const TattooTemplate(
     id: 't027',
@@ -223,6 +249,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.getraenke,
     price: 11.50,
     description: '"Cheers"-Schriftzug mit zwei angestoßenen Gläsern.',
+    icon: Icons.celebration,
   ),
   const TattooTemplate(
     id: 't028',
@@ -231,6 +258,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.getraenke,
     price: 15.90,
     description: 'Hopfenzweig, der sich um ein Bierglas rankt.',
+    icon: Icons.eco,
   ),
   const TattooTemplate(
     id: 't029',
@@ -239,6 +267,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.getraenke,
     price: 9.50,
     description: 'Schnapsglas mit feinem Schneeflocken-Muster, Après-Ski-Stimmung.',
+    icon: Icons.local_bar,
   ),
   const TattooTemplate(
     id: 't030',
@@ -247,6 +276,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tier,
     price: 18.90,
     description: 'Adler mit ausgebreiteten Schwingen über einer Berggipfel-Silhouette.',
+    icon: Icons.flight,
   ),
   const TattooTemplate(
     id: 't031',
@@ -255,6 +285,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tier,
     price: 17.90,
     description: 'Alpensteinbock im Profil mit markanten geschwungenen Hörnern.',
+    icon: Icons.terrain,
   ),
   const TattooTemplate(
     id: 't032',
@@ -263,6 +294,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tier,
     price: 19.50,
     description: 'Zwei Wolfsköpfe Rücken an Rücken, symmetrisch angeordnet.',
+    icon: Icons.groups,
   ),
   const TattooTemplate(
     id: 't033',
@@ -271,6 +303,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.symbol,
     price: 14.50,
     description: 'Klassische Kompassrose mit feinen Linienverzierungen.',
+    icon: Icons.navigation,
   ),
   const TattooTemplate(
     id: 't034',
@@ -279,6 +312,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.symbol,
     price: 13.50,
     description: 'Klassisches Anker-Motiv, mit Seil umwickelt.',
+    icon: Icons.anchor,
   ),
   const TattooTemplate(
     id: 't035',
@@ -287,6 +321,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.symbol,
     price: 16.50,
     description: 'Filigranes, rundes Mandala-Muster.',
+    icon: Icons.blur_circular,
   ),
   const TattooTemplate(
     id: 't036',
@@ -295,6 +330,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.symbol,
     price: 10.90,
     description: 'Stilisierter Blitz mit angedeuteter Gewitterwolke.',
+    icon: Icons.thunderstorm,
   ),
   const TattooTemplate(
     id: 't037',
@@ -303,6 +339,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.symbol,
     price: 15.50,
     description: 'Dreifache Bergsilhouette mit aufgehender Sonne.',
+    icon: Icons.landscape,
   ),
   const TattooTemplate(
     id: 't038',
@@ -311,6 +348,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.blumen,
     price: 12.90,
     description: 'Klassisches Alpen-Edelweiß, filigran gezeichnet.',
+    icon: Icons.filter_vintage,
   ),
   const TattooTemplate(
     id: 't039',
@@ -319,6 +357,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.blumen,
     price: 16.90,
     description: 'Verschlungene Rosenranke mit Dornen.',
+    icon: Icons.grass,
   ),
   const TattooTemplate(
     id: 't040',
@@ -327,6 +366,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.blumen,
     price: 12.00,
     description: 'Zarter Kirschblütenzweig, Ergänzung zu SPT-003.',
+    icon: Icons.spa,
   ),
   const TattooTemplate(
     id: 't041',
@@ -335,6 +375,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.fantasie,
     price: 18.50,
     description: 'Stilisiertes Drachenauge, umrahmt von Flammen.',
+    icon: Icons.remove_red_eye,
   ),
   const TattooTemplate(
     id: 't042',
@@ -343,6 +384,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.fantasie,
     price: 21.90,
     description: 'Phönix im Aufflug mit weit gespannten Flügeln.',
+    icon: Icons.whatshot,
   ),
   const TattooTemplate(
     id: 't043',
@@ -351,6 +393,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.fantasie,
     price: 17.50,
     description: 'Klassischer Traumfänger mit herabhängenden Federn.',
+    icon: Icons.nights_stay,
   ),
   const TattooTemplate(
     id: 't044',
@@ -359,6 +402,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tribal,
     price: 14.90,
     description: 'Fließendes, symmetrisches Wellen-Tribal.',
+    icon: Icons.waves,
   ),
   const TattooTemplate(
     id: 't045',
@@ -367,6 +411,7 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.tribal,
     price: 15.90,
     description: 'Tribal-Muster in geschwungener Flammenform.',
+    icon: Icons.whatshot,
   ),
   const TattooTemplate(
     id: 't046',
@@ -375,5 +420,6 @@ final List<TattooTemplate> mockCatalog = [
     category: TemplateCategory.schriftzug,
     price: 9.90,
     description: 'Geschwungener Schriftzug, klassisches Freundschafts-/Partner-Motiv.',
+    icon: Icons.favorite,
   ),
 ];

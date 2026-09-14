@@ -104,6 +104,13 @@ class TattooTemplate {
   final double price;
   final String description;
 
+  /// Optionales, individuelles Vorschau-Icon für diese eine Vorlage.
+  ///
+  /// Ist keins gesetzt, fällt [effectiveIcon] auf das Standard-Icon der
+  /// [category] zurück — so sehen ältere/unvollständige Einträge nie leer
+  /// aus.
+  final IconData? icon;
+
   const TattooTemplate({
     required this.id,
     required this.templateNumber,
@@ -111,7 +118,12 @@ class TattooTemplate {
     required this.category,
     required this.price,
     required this.description,
+    this.icon,
   });
+
+  /// Das Icon, das im Katalog tatsächlich angezeigt wird: das individuelle
+  /// [icon] der Vorlage, sonst das Kategorie-Standard-Icon.
+  IconData get effectiveIcon => icon ?? category.icon;
 
   String get formattedPrice => '${price.toStringAsFixed(2)} €';
 

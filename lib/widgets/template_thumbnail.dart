@@ -31,7 +31,7 @@ class TemplateThumbnail extends StatelessWidget {
             ),
           ),
           child: Center(
-            child: Icon(template.category.icon, size: iconSize, color: Colors.white),
+            child: Icon(template.effectiveIcon, size: iconSize, color: Colors.white),
           ),
         ),
         Positioned(
