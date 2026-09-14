@@ -36,7 +36,28 @@ jobs:
         run: flutter pub get
 
       - name: Run tests
-        run: flutter test --reporter=github
+        id: run_tests
+        run: |
+          set +e
+          flutter test --reporter=expanded > test_output.txt 2>&1
+          echo "exit_code=$?" >> "$GITHUB_OUTPUT"
+          cat test_output.txt
+
+      - name: Show test output as annotations (diagnostics)
+        if: always() && steps.run_tests.outputs.exit_code != '0'
+        run: |
+          grep -inE "error|exception|unhandled|failed|Expected|Actual" test_output.txt | head -60 > relevant.txt || true
+          if [ ! -s relevant.txt ]; then
+            tail -n 60 test_output.txt > relevant.txt
+          fi
+          while IFS= read -r line; do
+            [ -z "$line" ] && continue
+            echo "::error::${line:0:400}"
+          done < relevant.txt
+
+      - name: Fail build if tests failed
+        if: steps.run_tests.outputs.exit_code != '0'
+        run: exit 1
 
       - name: Build web release
         run: flutter build web --release --base-href /spraytattoo_katalog/
