@@ -26,8 +26,11 @@ jobs:
         with:
           channel: stable
 
-      - name: Generate web platform scaffolding
-        run: flutter create --platforms=web .
+      - name: Generate web platform scaffolding (only if missing)
+        run: |
+          if [ ! -d web ]; then
+            flutter create --platforms=web .
+          fi
 
       - name: Install dependencies
         run: flutter pub get

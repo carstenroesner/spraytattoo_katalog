@@ -11,5 +11,4 @@ ios/
 macos/
 linux/
 windows/
-web/
 pubspec.lock
