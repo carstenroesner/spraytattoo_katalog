@@ -71,74 +71,81 @@ class WishlistScreen extends StatelessWidget {
                 ),
               ),
             )
-          : ListView.separated(
-              padding: const EdgeInsets.all(16),
-              itemCount: items.length,
-              separatorBuilder: (_, __) => const SizedBox(height: 10),
-              itemBuilder: (context, index) {
-                final template = items[index];
-                return Card(
-                  child: ListTile(
-                    contentPadding: const EdgeInsets.all(8),
-                    leading: SizedBox(
-                      width: 56,
-                      height: 56,
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(10),
-                        child: TemplateThumbnail(template: template, iconSize: 26),
-                      ),
-                    ),
-                    title: Text(template.name),
-                    subtitle: Text('Nr. ${template.templateNumber} · ${template.category.label}'),
-                    trailing: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.end,
-                      children: [
-                        Text(
-                          template.formattedPrice,
-                          style: const TextStyle(fontWeight: FontWeight.bold),
+          : Column(
+              children: [
+                Expanded(
+                  child: ListView.separated(
+                    padding: const EdgeInsets.all(16),
+                    itemCount: items.length,
+                    separatorBuilder: (_, __) => const SizedBox(height: 10),
+                    itemBuilder: (context, index) {
+                      final template = items[index];
+                      return Card(
+                        child: ListTile(
+                          contentPadding: const EdgeInsets.all(8),
+                          leading: SizedBox(
+                            width: 56,
+                            height: 56,
+                            child: ClipRRect(
+                              borderRadius: BorderRadius.circular(10),
+                              child: TemplateThumbnail(template: template, iconSize: 26),
+                            ),
+                          ),
+                          title: Text(template.name),
+                          subtitle: Text(
+                            'Nr. ${template.templateNumber} · ${template.category.label}',
+                          ),
+                          trailing: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                template.formattedPrice,
+                                style: const TextStyle(fontWeight: FontWeight.bold),
+                              ),
+                              IconButton(
+                                padding: EdgeInsets.zero,
+                                constraints: const BoxConstraints(),
+                                iconSize: 20,
+                                icon: const Icon(Icons.close),
+                                onPressed: () => wishlist.remove(template),
+                              ),
+                            ],
+                          ),
                         ),
-                        IconButton(
-                          padding: EdgeInsets.zero,
-                          constraints: const BoxConstraints(),
-                          iconSize: 20,
-                          icon: const Icon(Icons.close),
-                          onPressed: () => wishlist.remove(template),
+                      );
+                    },
+                  ),
+                ),
+                SafeArea(
+                  top: false,
+                  child: Padding(
+                    padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
+                    child: Row(
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('Gesamt', style: Theme.of(context).textTheme.bodySmall),
+                            Text(
+                              '${wishlist.totalPrice.toStringAsFixed(2)} €',
+                              style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                                    fontWeight: FontWeight.bold,
+                                  ),
+                            ),
+                          ],
+                        ),
+                        const Spacer(),
+                        FilledButton.icon(
+                          onPressed: () => _confirmPurchase(context, wishlist),
+                          icon: const Icon(Icons.shopping_bag_outlined),
+                          label: const Text('Zur Kasse'),
                         ),
                       ],
                     ),
                   ),
-                );
-              },
-            ),
-      bottomNavigationBar: items.isEmpty
-          ? null
-          : SafeArea(
-              child: Padding(
-                padding: const EdgeInsets.fromLTRB(16, 8, 16, 16),
-                child: Row(
-                  children: [
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Gesamt', style: Theme.of(context).textTheme.bodySmall),
-                        Text(
-                          '${wishlist.totalPrice.toStringAsFixed(2)} €',
-                          style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                                fontWeight: FontWeight.bold,
-                              ),
-                        ),
-                      ],
-                    ),
-                    const Spacer(),
-                    FilledButton.icon(
-                      onPressed: () => _confirmPurchase(context, wishlist),
-                      icon: const Icon(Icons.shopping_bag_outlined),
-                      label: const Text('Zur Kasse'),
-                    ),
-                  ],
                 ),
-              ),
+              ],
             ),
     );
   }
