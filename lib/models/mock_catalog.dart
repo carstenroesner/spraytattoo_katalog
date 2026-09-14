@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 import 'tattoo_template.dart';
 
 /// Beispiel-Katalog. In einer echten App würde diese Liste aus einem
