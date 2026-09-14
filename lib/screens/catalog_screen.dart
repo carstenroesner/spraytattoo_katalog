@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../models/mock_catalog.dart';
 import '../models/tattoo_template.dart';
 import '../widgets/template_card.dart';
+import 'feature_overview_screen.dart';
 import 'template_detail_screen.dart';
 
 /// Durchblätterbarer Katalog aller Spraytattoo-Vorlagen als Thumbnail-Grid,
@@ -29,7 +30,30 @@ class _CatalogScreenState extends State<CatalogScreen> {
     final templates = _filteredCatalog;
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Vorlagen-Katalog')),
+      appBar: AppBar(
+        title: const Text('Vorlagen-Katalog'),
+        actions: [
+          PopupMenuButton<String>(
+            onSelected: (value) {
+              if (value == 'funktionsumfang') {
+                Navigator.of(context).push(
+                  MaterialPageRoute(builder: (_) => const FeatureOverviewScreen()),
+                );
+              }
+            },
+            itemBuilder: (context) => const [
+              PopupMenuItem(
+                value: 'funktionsumfang',
+                child: ListTile(
+                  leading: Icon(Icons.info_outline),
+                  title: Text('Funktionsumfang'),
+                  contentPadding: EdgeInsets.zero,
+                ),
+              ),
+            ],
+          ),
+        ],
+      ),
       body: Column(
         children: [
           SizedBox(
