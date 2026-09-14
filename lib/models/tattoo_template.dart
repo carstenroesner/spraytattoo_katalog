@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
 
 /// Kategorie einer Spraytattoo-Vorlage, bestimmt u. a. Icon und Platzhalterfarbe.
-enum TemplateCategory { tribal, tier, blumen, schriftzug, symbol, fantasie }
+enum TemplateCategory {
+  tribal,
+  tier,
+  blumen,
+  schriftzug,
+  symbol,
+  fantasie,
+  ski,
+  bike,
+  bob,
+  getraenke,
+}
 
 extension TemplateCategoryLabel on TemplateCategory {
   String get label {
@@ -18,6 +29,14 @@ extension TemplateCategoryLabel on TemplateCategory {
         return 'Symbol';
       case TemplateCategory.fantasie:
         return 'Fantasie';
+      case TemplateCategory.ski:
+        return 'Ski';
+      case TemplateCategory.bike:
+        return 'Bike';
+      case TemplateCategory.bob:
+        return 'Bob';
+      case TemplateCategory.getraenke:
+        return 'Getränke';
     }
   }
 
@@ -35,6 +54,14 @@ extension TemplateCategoryLabel on TemplateCategory {
         return Icons.hexagon_outlined;
       case TemplateCategory.fantasie:
         return Icons.auto_fix_high;
+      case TemplateCategory.ski:
+        return Icons.downhill_skiing;
+      case TemplateCategory.bike:
+        return Icons.pedal_bike;
+      case TemplateCategory.bob:
+        return Icons.speed;
+      case TemplateCategory.getraenke:
+        return Icons.sports_bar;
     }
   }
 
@@ -52,6 +79,14 @@ extension TemplateCategoryLabel on TemplateCategory {
         return const Color(0xFF00695C);
       case TemplateCategory.fantasie:
         return const Color(0xFF6A1B9A);
+      case TemplateCategory.ski:
+        return const Color(0xFF0277BD);
+      case TemplateCategory.bike:
+        return const Color(0xFF2E7D32);
+      case TemplateCategory.bob:
+        return const Color(0xFF1A237E);
+      case TemplateCategory.getraenke:
+        return const Color(0xFFFF8F00);
     }
   }
 }

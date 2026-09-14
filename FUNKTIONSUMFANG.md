@@ -9,7 +9,7 @@ Sprayer gehen.
 - Alle verfügbaren Vorlagen werden als Kachel-Raster mit Vorschaubild (Thumbnail)
   angezeigt.
 - Die Vorlagen lassen sich nach Kategorie filtern: Tribal, Tier, Blumen,
-  Schriftzug, Symbol, Fantasie.
+  Schriftzug, Symbol, Fantasie, Ski, Bike, Bob, Getränke.
 - Zu jeder Vorlage sind auf einen Blick sichtbar: Name, Kategorie, Preis und
   Schablonen-Nummer.
 - Ein Tippen auf eine Vorlage öffnet die Detailansicht mit größerem Vorschaubild,
@@ -52,8 +52,11 @@ Sprayer gehen.
 
 - Die Vorschaubilder sind aktuell farbige Platzhalter mit Kategorie-Icon, da noch
   keine echten Fotos der Schablonen vorliegen.
-- Der Katalog besteht aus 16 Beispiel-Vorlagen (Mock-Daten); eine Anbindung an
-  ein echtes Backend ist noch nicht umgesetzt.
+- Der Katalog besteht aus 46 Beispiel-Vorlagen (Mock-Daten), u. a. eine
+  Themenerweiterung rund um Winterberg (Ski, Bike, Bob, Getränke); eine
+  Anbindung an ein echtes Backend ist noch nicht umgesetzt.
+- Das "W-Monogramm Wintersport" (SPT-017) ist ein eigenständiges Design und
+  kein Abbild eines echten Stadt- oder Vereinslogos.
 - Der Kaufabschluss ist simuliert; es findet noch keine echte Zahlungsabwicklung
   statt.
 - Eine automatisch aktualisierte Web-Vorschau der App ist unter

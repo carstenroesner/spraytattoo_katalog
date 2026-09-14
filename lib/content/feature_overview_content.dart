@@ -19,7 +19,8 @@ const List<FeatureSection> featureOverviewSections = [
     title: '1. Katalog durchblättern',
     points: [
       'Alle Vorlagen werden als Kachel-Raster mit Vorschaubild angezeigt.',
-      'Filter nach Kategorie: Tribal, Tier, Blumen, Schriftzug, Symbol, Fantasie.',
+      'Filter nach Kategorie: Tribal, Tier, Blumen, Schriftzug, Symbol, Fantasie, '
+          'Ski, Bike, Bob, Getränke.',
       'Auf einen Blick sichtbar: Name, Kategorie, Preis und Schablonen-Nummer.',
       'Detailansicht mit größerem Bild, Beschreibung, Preis und Nummer.',
     ],
@@ -60,6 +61,8 @@ const List<FeatureSection> featureOverviewSections = [
 
 const List<String> featureOverviewKnownLimitations = [
   'Vorschaubilder sind aktuell farbige Platzhalter mit Kategorie-Icon.',
-  'Der Katalog besteht aus 16 Beispiel-Vorlagen (Mock-Daten), noch kein Backend.',
+  'Der Katalog besteht aus 46 Beispiel-Vorlagen (Mock-Daten), noch kein Backend.',
+  'Das "W-Monogramm Wintersport" ist ein eigenständiges Design, kein Abbild '
+      'eines echten Stadt- oder Vereinslogos.',
   'Der Kaufabschluss ist simuliert, es gibt noch keine echte Zahlungsabwicklung.',
 ];
