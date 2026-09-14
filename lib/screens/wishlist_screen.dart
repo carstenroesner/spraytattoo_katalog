@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import '../models/tattoo_template.dart';
 import '../services/wishlist_service.dart';
 import '../widgets/template_thumbnail.dart';
 import 'order_confirmation_screen.dart';
